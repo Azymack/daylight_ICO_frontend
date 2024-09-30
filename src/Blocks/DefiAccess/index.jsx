@@ -27,7 +27,7 @@ const DefiAccess = ({ offsetY }) => {
                 classnamestyle="defiaccess--info-header-icon aic hover-effect wave"
               />
               <div className="defiaccess--info-header-title">
-                DAYLIGHT PROTOCOL
+                FUTARIA PROTOCOL
               </div>
             </div>
             <div className="defiaccess--info-title">

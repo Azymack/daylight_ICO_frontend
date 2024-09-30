@@ -26,7 +26,7 @@ const Info = ({ addDaylToken }) => {
         data-aos-offset="-100"
         data-aos-easing="ease-in"
       >
-        Daylight Protocol is a decentralized auto-staking ecosystem with
+        Futaria Protocol is a decentralized auto-staking ecosystem with
         incentivized extensions that has been strategically created to disrupt
         decentralized earning and propel freedom of financial limitations, while
         rewarding users for contributions to the ecosystem with an appreciated
@@ -44,22 +44,22 @@ const Info = ({ addDaylToken }) => {
       <div className="hero-info--socials">
         <Icon
           imgsrc={MediumIcon}
-          link="https://medium.com/@DaylightProtocol"
+          // link="https://medium.com/@DaylightProtocol"
           classnamestyle="hero-info--socials-icon aic hover-effect"
         />
         <Icon
           imgsrc={TelegramIcon}
-          link="https://t.me/Daylightprotocol"
+          // link="https://t.me/Daylightprotocol"
           classnamestyle="hero-info--socials-icon aic hover-effect"
         />
         <Icon
           imgsrc={DiscordIcon}
-          link="https://discord.gg/CsRc6AVZbZ"
+          // link="https://discord.gg/CsRc6AVZbZ"
           classnamestyle="hero-info--socials-icon aic hover-effect"
         />
         <Icon
           imgsrc={TwitterIcon}
-          link="https://twitter.com/DaylightDeFi"
+          // link="https://twitter.com/DaylightDeFi"
           classnamestyle="hero-info--socials-icon aic hover-effect"
         />
       </div>

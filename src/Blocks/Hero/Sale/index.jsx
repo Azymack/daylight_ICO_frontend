@@ -150,10 +150,10 @@ const Sale = ({
             </div>*/}
             <div className="hero-sale-section-brand-title">
               <div className="hero-sale-section-brand-title-name">
-                Daylight Protocol
+                Futaria Protocol
               </div>
               <div className="hero-sale-section-brand-title-name-small">
-                $DAYL
+                $FUT
               </div>
             </div>
           </div>
@@ -286,7 +286,7 @@ const Sale = ({
               Token Distribution
             </div>
             <div className="hero-sale-section-price-amount">
-              {numberWithCommas((hardCap / 1e18) * 40)} $DAYL
+              {numberWithCommas((hardCap / 1e18) * 40)} $FUT
             </div>
           </div>
           <div className="hero-sale-section-price">
@@ -337,7 +337,7 @@ const Sale = ({
                 </div>
                 <div className="hero-sale-section-connected-a">
                   {localeString(Big(totalDayl).div(Big(10).pow(18)).toString())}{" "}
-                  $DAYL
+                  $FUT
                 </div>
               </div>
               <div
@@ -353,7 +353,7 @@ const Sale = ({
                   {localeString(
                     Big(totalWithdrawn).div(Big(10).pow(18)).toString()
                   )}{" "}
-                  $DAYL
+                  $FUT
                 </div>
               </div>
             </div>
@@ -375,13 +375,13 @@ const Sale = ({
           className="hero-sale-section-button"
           onClick={() => setisModalOpen(() => true)}
         >
-          Purchase $DAYL
+          Purchase $FUT
         </button>
         <button
           className="hero-sale-section-button"
           onClick={() => setisModalMoreDaylOpen(() => true)}
         >
-          Purchase $DAYL
+          Purchase $FUT
         </button> */}
         {/* //////////////// add dayl normal */}
         {!!wallet && state == 1 && !allowance && (
@@ -415,7 +415,7 @@ const Sale = ({
               className="hero-sale-section-button"
               onClick={() => setisModalOpen(() => true)}
             >
-              Purchase $DAYL
+              Purchase $FUT
             </button>
           </div>
         )}
@@ -440,7 +440,7 @@ const Sale = ({
                   {localeString(
                     Big(claimable).div(Big(10).pow(18)).toNumber().toString()
                   )}{" "}
-                  $DAYL
+                  $FUT
                 </div>
               </div>
               {/* <div
@@ -499,7 +499,7 @@ const Sale = ({
                   {localeString(
                     Big(claimable).div(Big(10).pow(18)).toNumber().toString()
                   )}{" "}
-                  $DAYL
+                  $FUT
                 </div>
               </div>
               <div

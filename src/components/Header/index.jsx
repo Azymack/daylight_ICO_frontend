@@ -120,7 +120,7 @@ const Header = ({ setisWalletOptionsOpen, offsetY }) => {
             scroll={(el) => scrollWithOffset(el, 100)}
             className="hover-effect header--link"
           >
-            Daylight Protocol
+            Futaria Protocol
           </HashLink>
           <HashLink
             smooth={true}
@@ -143,7 +143,7 @@ const Header = ({ setisWalletOptionsOpen, offsetY }) => {
             <a
               className="header--litepaper-left aic"
               style={{ textDecoration: "none" }}
-              href="https://daylight-protocol.gitbook.io/litepaper/"
+              // href="https://daylight-protocol.gitbook.io/litepaper/"
               target="_blank"
             >
               Litepaper
@@ -151,7 +151,8 @@ const Header = ({ setisWalletOptionsOpen, offsetY }) => {
             <a
               className="header--litepaper-right aic"
               style={{ textDecoration: "none" }}
-              href="https://daylightprotocol.com/"
+              // href="https://daylightprotocol.com/"
+              href="https://futaria.co.uk/"
               target="_blank"
             >
               Website

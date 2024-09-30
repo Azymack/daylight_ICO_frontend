@@ -24,22 +24,22 @@ const Footer = () => {
         <div className="footer--socials aic">
           <Icon
             imgsrc={mediumIcon}
-            link="https://medium.com/@DaylightProtocol"
+            // link="https://medium.com/@DaylightProtocol"
             classnamestyle="footer--social aic hover-effect"
           />
           <Icon
             imgsrc={discordIcon}
-            link="https://discord.gg/CsRc6AVZbZ"
+            // link="https://discord.gg/CsRc6AVZbZ"
             classnamestyle="footer--social aic hover-effect"
           />
           <Icon
             imgsrc={telegramIcon}
-            link="https://t.me/Daylightprotocol"
+            // link="https://t.me/Daylightprotocol"
             classnamestyle="footer--social aic hover-effect"
           />
           <Icon
             imgsrc={twitterIcon}
-            link="https://twitter.com/DaylightDeFi"
+            // link="https://twitter.com/DaylightDeFi"
             classnamestyle="footer--social aic hover-effect"
           />
         </div>
@@ -59,7 +59,7 @@ const Footer = () => {
               scroll={(el) => scrollWithOffset(el, 100)}
               className="hover-effect footer--bottom-link"
             >
-              Daylight Protocol
+              Futaria Protocol
             </HashLink>
             <div className="footer--bottom-div" />
             <HashLink
@@ -93,7 +93,7 @@ const Footer = () => {
               to="#daylight"
               className="hover-effect footer--bottom-link"
             >
-              Daylight Protocol
+              Futaria Protocol
             </HashLink>
             <div className="footer--bottom-div" />
             <HashLink
@@ -117,7 +117,7 @@ const Footer = () => {
             classnamestyle="footer--bottom-brand aic hover-effect"
           />
           <div className="footer--bottom-text">
-            © {new Date().getFullYear()} Daylight Capital, All Rights Reserved.
+            © {new Date().getFullYear()} Futaria Capital, All Rights Reserved.
           </div>
         </div>
       </div>

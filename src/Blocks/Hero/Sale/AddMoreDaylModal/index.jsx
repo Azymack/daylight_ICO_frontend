@@ -68,7 +68,7 @@ const AddMoreDaylModal = ({
       toast.error("Presale ended");
     } else {
       if (busdBalance.toString() === "0" || isRange === "0") {
-        toast.error("Buying 0 $DAYL");
+        toast.error("Buying 0 $FUT");
       } else {
         await buyDayl(isRange);
       }
@@ -90,11 +90,11 @@ const AddMoreDaylModal = ({
             classnamestyle="hover-effect adddaylmodal--header-back aic"
           />
         </div>
-        Purchase $DAYL
+        Purchase $FUT
       </div>
       {/* /////////// */}
       <div className="adddaylmodal--current aic">
-        <div>My current $DAYL Investment</div>
+        <div>My current $FUT Investment</div>
         <div className="adddaylmodal--current-b">
           {new Big(totalDayl).div(new Big(10).pow(18)).toFixed(2)}
         </div>
@@ -111,10 +111,10 @@ const AddMoreDaylModal = ({
             {isCurrent === "busd"
               ? localeString(new Big(busdBalance).div(new Big(10).pow(18)))
               : localeString(
-                new Big(busdBalance)
-                  .mul(new Big(rate))
-                  .div(new Big(10).pow(18))
-              )}
+                  new Big(busdBalance)
+                    .mul(new Big(rate))
+                    .div(new Big(10).pow(18))
+                )}
           </b>
         </div>
         <div className="adddaylmodal--infostack-a-amount">
@@ -277,7 +277,7 @@ const AddMoreDaylModal = ({
         type="button"
         onClick={() => addDayl()}
       >
-        Purchase $DAYL
+        Purchase $FUT
       </button>
     </div>
   );

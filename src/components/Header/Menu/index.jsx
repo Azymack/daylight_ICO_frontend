@@ -52,7 +52,7 @@ const Menu = ({ isOpen, close, buttonweb3 }) => {
           to="#daylight"
           className="hover-effect menu--links-link"
         >
-          Daylight Protocol
+          Futaria Protocol
         </HashLink>
         <HashLink
           onClick={() => close()}
@@ -73,7 +73,7 @@ const Menu = ({ isOpen, close, buttonweb3 }) => {
         <a
           onClick={() => close()}
           target="_blank"
-          href="https://daylight-protocol.gitbook.io/litepaper/"
+          // href="https://daylight-protocol.gitbook.io/litepaper/"
           className="hover-effect menu--links-link"
         >
           Litepaper
@@ -81,7 +81,8 @@ const Menu = ({ isOpen, close, buttonweb3 }) => {
         <a
           onClick={() => close()}
           target="_blank"
-          href="https://daylightprotocol.com/"
+          // href="https://daylightprotocol.com/"
+          href="https://futaria.co.uk/"
           className="hover-effect menu--links-link"
         >
           Website
@@ -93,27 +94,27 @@ const Menu = ({ isOpen, close, buttonweb3 }) => {
         <div className="menu--socials aic">
           <Icon
             imgsrc={MediumIcon}
-            link="https://medium.com/@DaylightProtocol"
+            // link="https://medium.com/@DaylightProtocol"
             classnamestyle="menu--socials-social aic hover-effect"
           />
           <Icon
             imgsrc={TelegramIcon}
-            link="https://t.me/Daylightprotocol"
+            // link="https://t.me/Daylightprotocol"
             classnamestyle="menu--socials-social aic hover-effect"
           />
           <Icon
             imgsrc={DiscordIcon}
-            link="https://discord.gg/CsRc6AVZbZ"
+            // link="https://discord.gg/CsRc6AVZbZ"
             classnamestyle="menu--socials-social aic hover-effect"
           />
           <Icon
             imgsrc={TwitterIcon}
-            link="https://twitter.com/DaylightDeFi"
+            // link="https://twitter.com/DaylightDeFi"
             classnamestyle="menu--socials-social aic hover-effect"
           />
         </div>
         <div className="menu--copyright">
-          Daylight Protocol Copyright 2022. All rights reserved.
+          Futaria Protocol Copyright 2022. All rights reserved.
         </div>
       </div>
     </div>
