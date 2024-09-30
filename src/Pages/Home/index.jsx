@@ -202,17 +202,28 @@ const Home = () => {
         return;
       }
       if (!!presaleReadContract && !!busdReadContract) {
-        const [userInfo, whitelisted, claimable, busdBalance, busdAllowance, maxPerWallet] =
-          await Promise.all([
-            presaleReadContract.userInfo(wallet),
-            presaleReadContract.whitelisted(wallet),
-            presaleReadContract.claimableAmount(wallet),
-            busdReadContract.balanceOf(wallet),
-            busdReadContract.allowance(wallet, PresaleAddress),
-            presaleReadContract.maxPerWallet(),
-          ]);
+        const [
+          userInfo,
+          whitelisted,
+          claimable,
+          busdBalance,
+          busdAllowance,
+          maxPerWallet,
+        ] = await Promise.all([
+          presaleReadContract.userInfo(wallet),
+          presaleReadContract.whitelisted(wallet),
+          presaleReadContract.claimableAmount(wallet),
+          busdReadContract.balanceOf(wallet),
+          busdReadContract.allowance(wallet, PresaleAddress),
+          presaleReadContract.maxPerWallet(),
+        ]);
 
-        console.log("BUSD allow next: ", busdBalance, busdAllowance, maxPerWallet);
+        console.log(
+          "BUSD allow next: ",
+          busdBalance,
+          busdAllowance,
+          maxPerWallet
+        );
         setBusdAllowance(!busdAllowance.lte(maxPerWallet));
         setTotalDayl(userInfo.totalReward.toString());
         setDepositAmount(userInfo.depositAmount.toString());
@@ -264,14 +275,18 @@ const Home = () => {
     if (!busdContract || !presaleContract || !presaleReadContract) {
       return;
     }
-    console.log("Contract: ", busdContract, BigNumber.from("10").mul(BigNumber.from(maxPerWallet)).toString());
+    console.log(
+      "Contract: ",
+      busdContract,
+      BigNumber.from("10").mul(BigNumber.from(maxPerWallet)).toString()
+    );
     let tx = await busdContract.approve(
       PresaleAddress,
       BigNumber.from(10).mul(BigNumber.from(maxPerWallet)).toString(),
       {
         from: wallet,
-        gasLimit: 400000
-      },
+        gasLimit: 400000,
+      }
     );
     await tx.wait();
     saveTxHistory(tx.hash);
@@ -299,7 +314,7 @@ const Home = () => {
     ) {
       return toast("Smaller than minimum amount");
     }
-    console.log("Not Small")
+    console.log("Not Small");
     if (
       BigNumber.from(totalDayl)
         .add(BigNumber.from(val).mul(BigNumber.from(rate)))
@@ -307,25 +322,25 @@ const Home = () => {
     ) {
       return toast("Exceeds maximum amount");
     }
-    console.log("Not Big")
+    console.log("Not Big");
     let ttlBusd = await presaleReadContract.totalBUSD();
     if (ttlBusd.add(BigNumber.from(val)).gt(BigNumber.from(hardCap))) {
       return toast("Exceeds Hard Cap");
     }
-    console.log("Not Hardcap exceed")
+    console.log("Not Hardcap exceed");
 
     try {
-      console.log("Tx Before: ", ttlBusd)
+      console.log("Tx Before: ", ttlBusd);
       let tx = await presaleContract.deposit(
         BigNumber.from(val).mul(BigNumber.from(rate)).toString(),
         {
           from: wallet,
-          gasLimit: 400000
+          gasLimit: 400000,
         }
       );
-      console.log("Tx: ", tx)
+      console.log("Tx: ", tx);
       await tx.wait();
-      console.log("Tx after: ", tx)
+      console.log("Tx after: ", tx);
       saveTxHistory(tx.hash);
       toast.success("Depositing Success");
     } catch (err) {
@@ -361,7 +376,7 @@ const Home = () => {
     }
     let tx = await presaleContract.withdraw({
       from: wallet,
-      gasLimit: 400000
+      gasLimit: 400000,
     });
     await tx.wait();
     saveTxHistory(tx.hash);
@@ -393,7 +408,7 @@ const Home = () => {
     }
     let tx = await presaleContract.claimToken({
       from: wallet,
-      gasLimit: 400000
+      gasLimit: 400000,
     });
     await tx.wait();
     saveTxHistory(tx.hash);
@@ -441,9 +456,9 @@ const Home = () => {
       <SectionDivider />
       <Litepaper />
       <SectionDivider />
-      <DexSection offsetY={offsetY} />
+      {/* <DexSection offsetY={offsetY} /> */}
       {/* <SectionDivider /> */}
-      <Road />
+      {/* <Road /> */}
       <Footer offsetY={offsetY} />
       <ToastContainer />
     </Body>
