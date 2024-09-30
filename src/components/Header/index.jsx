@@ -7,7 +7,8 @@ import Typography from "@mui/material/Typography";
 //
 import "./style.css";
 //
-import LogoBrand from "../../assets/img/brand/logo.svg";
+// import LogoBrand from "../../assets/img/brand/logo.svg";
+import LogoBrand from "../../assets/img/brand/new_logo.png";
 import menuIcon from "../../assets/img/icons/menu.svg";
 import walletIcon from "../../assets/img/icons/wallet.svg";
 import downTabIcon from "../../assets/img/icons/downTab.svg";

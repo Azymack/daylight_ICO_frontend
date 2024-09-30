@@ -2,7 +2,8 @@ import React from "react";
 import "./style.css";
 import { HashLink } from "react-router-hash-link";
 //
-import LogoBrand from "../../assets/img/brand/logo.svg";
+// import LogoBrand from "../../assets/img/brand/logo.svg";
+import LogoBrand from "../../assets/img/brand/new_logo.png";
 import mediumIcon from "../../assets/img/socials/medium.svg";
 import discordIcon from "../../assets/img/socials/discord.svg";
 import telegramIcon from "../../assets/img/socials/telegram.svg";

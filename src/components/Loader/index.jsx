@@ -1,7 +1,8 @@
 import React from "react";
 import Icon from "../Icon";
 import "./style.css";
-import Logo from "../../assets//img//brand/logo.svg";
+// import Logo from "../../assets//img//brand/logo.svg";
+import Logo from "../../assets//img//brand/new_logo.png";
 import logoMascot from "../../assets//img//brand/logoMascot.gif";
 const Loader = () => {
   return (
